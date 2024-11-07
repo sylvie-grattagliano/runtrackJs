@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boissons Mexicaines</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <img src="drapeauM.jpg" alt="Drapeau Mexique" width="100" height="100" />
+                <h3 class="title">LE MEXIQUE ET SES SPIRITUEUX</h3>
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://laplateforme.io/">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:sylvie.grattagliano@laplateforme.io">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Carte champs agave -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="arandas.jpg" class="card-img-top" alt="agave">
+
+                    <div class="card-body">
+                        <h5 id="textem" class="card-title">Mon Secret </h5>
+                        <p class="card-text fw-bold">Ici se trouve le champ le plus connu du Mexique!</p>
+                        <p>Avec ses feuilles pointues de couleur vert-bleu, l'agave est la plante qui permet de produire la tequila, boisson emblématique du Mexique où la production est en plein essor.</p>
+                        <a href="https://www.20minutes.fr/monde/4115482-20241014-mexique-cinq-corps-decapites-abandonnes-route-zone-controlee-cartel-jalisco" target="_blank" class="bouton-lien"> En savoir Plus</a><br><br>
+
+                        <button class="btn btn-danger me-3" id="secret"> Mon Secret ...</button><br>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section principale -->
+            <div class="col-md-6 bg-light p-3">
+                <h3>Spiritueux préférés des Mexicains</h3><br>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="tequila.jpg" class="d-block w-50" alt="tequila">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="MEZCAL.jpg" class="d-block w-50" alt="mexicain">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="MODELO.jpeg" class="d-block w-50" alt="bière">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="MODELO.jpg" class="d-block w-50" alt="bière">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- <div class="image-container">
+                    <img src="mexicain.jpg" width="350" height="200" alt="mexicain">
+                </div> -->
+
+                <h4>La Tequila </h4>
+                <ul>
+                    <li>Produite à base d'agave bleu</li>
+                    <li>Distillé dans l'État de Jalisco Uniquement </li>
+                </ul>
+                <a href="https://www.casamex.fr/12-boissons-typiques-du-mexique" class="bouton-lien"> En savoir Plus</a> <br><br>
+
+
+                <h4>La Bière Corona</h4>
+                <ul>
+                    <li>Brassée avec du houblon importé de Bohême </li>
+                    <li>et du malt provenant d'Allemagne</li><br>
+
+                </ul>
+                <a href="https://fr.wikipedia.org/wiki/Corona_(bi%C3%A8re)#:~:text=La%20Corona%20Extra%20est%20brass%C3%A9e,alginate%20de%20propyl%C3%A8ne%20glycol%20(E405)" class="bouton-lien"> En savoir Plus</a> <br><br>
+
+
+                <script>
+                    // Exécuter le script après le chargement du contenu
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.getElementById('secret').addEventListener('click', function () {
+                            const texteElement = document.getElementById('textem');
+                            texteElement.textContent = "Celui qui connaît LE SECRET, ne peut le dévoiler !";
+                            texteElement.style.color = "blue"; // Changer la couleur en bleu
+                            texteElement.classList.add("fw-bold"); // Ajoute la classe Bootstrap pour le texte en gras
+                        });
+                    });
+                </script>
+            </div>
+
+            <!-- Aside droite -->
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://lexplorateurdugout.com/blog/spiritueux-agave-mezcal-tequila-rhum/">Road-trip </li></a>
+                    <li class="list-group-item"><a href="https://www.youtube.com/watch?v=ilm3bk5jKJI&t=16sMezcal">Fabrication du Mezcal</a></li>
+                    <li class="list-group-item"><a href="https://www.youtube.com/watch?v=v6H2FgerZKM">Fabrication de la Tequila </li></a>
+                    <li class="list-group-item"><a href="https://fr.wikipedia.org/wiki/Corona_(bi%C3%A8re)">Bière Corona</li></a>
+                    <li class="list-group-item"><a href="https://www.destinationcocktails.fr/voyage-cocktails/destination-le-mexique">Destination Cocktails</li></a>
+                    <li class="list-group-item"><a href="https://fr.wikipedia.org/wiki/Cartel_de_Jalisco_Nouvelle_G%C3%A9n%C3%A9ration">Violence</li></a>
+                    <li id="boutique" class="list-group-item"><a href="https://www.carrefour.fr/p/biere-au-spiritueux-mexicain-jus-de-citron-vert-et-sucre-de-canne-corona-sunset-5410228294115">Boutique en ligne</li></a>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Barre de progression -->
+        <div class="mt-4">
+            <h3>Nous vous accompagnons dans votre Road-Trip</h3>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <!-- Formulaire d'inscription -->
+        <div class="row mt-4">
+            <h2>Recevez votre copie gratuite de notre brochure</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="login" class="form-label">Login</label>
+                        <input type="text" class="form-control" id="login" placeholder="Login">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Votre Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <small class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</small>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" placeholder="Mot de Passe">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="url" class="form-label">URL brochure</label>
+                        <input type="url" class="form-control" id="url" placeholder="https://23455/brochure/Mexique/">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="dogecoin" class="form-label">DogeCoin</label>
+                        <input type="number" class="form-control" id="dogecoin" placeholder=".00">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check mt-4">
+                            <input class="form-check-input" type="checkbox" id="check">
+                            <label class="form-check-label" for="check">Control</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Soumettre</button><br>
+            </form>
+        </div>
+    </main>
+    <footer class="container footer text-center footer-custom">
+        <p>Mexico Bebidas @2024 - Nous suivre :
+            <a href="#">Facebook</a> -
+            <a href="#">X</a> -
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+    <!-- Lien vers Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

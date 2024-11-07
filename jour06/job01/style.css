@@ -1,0 +1,41 @@
+.progress-bar {
+  background-color: rgb(59, 211, 133);
+}
+
+.btn-primary {
+  background-color: rgb(59, 211, 133);
+}
+.btn-primary:hover {
+  background-color: rgb(9, 205, 48);
+}
+.navbar-brand {
+  text-align: center;
+}
+.btn-danger {
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+.bouton-lien {
+  display: inline-block; /* Le lien agit comme un bouton */
+  padding: 10px 20px; /* Espace intérieur pour agrandir le bouton */
+  color: #080202; /* Couleur du texte */
+  background-color: rgb(59, 211, 133); /* Couleur de fond */
+  text-decoration: none; /* Enlève le soulignement du lien */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px; /* Taille de la police */
+  transition: background-color 0.3s; /* Transition douce */
+}
+
+.bouton-lien:hover {
+  background-color: rgb(9, 205, 48);
+}
+#boutique:hover {
+  background-color: rgb(9, 205, 48);
+}
+.footer-custom {
+  background-color: #f1e9e9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* .custom-bg {
+  background-color: #45d65b; /* Couleur de fond personnalisée */
