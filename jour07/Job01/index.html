@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+
+
+    <!-- Lien vers le CSS de Materialize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Lien vers les Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #e1fefc;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .input-field label {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .input-field input:focus+label {
+        color: #341a9b;
+    }
+
+    .input-field input:focus {
+        border-bottom: 1px solid #93c1e6;
+        box-shadow: 0 1px 0 0 #e47dc5;
+    }
+</style>
+
+
+<body>
+
+    <!-- Header avec une navigation -->
+    <header>
+        <nav class="blue darken-3">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo center">Yes</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Formulaire de création de compte -->
+    <div class="container">
+        <h4 class="center-align">Créer un compte</h4>
+
+        <form action="#" method="POST" class="col s12">
+            <!-- Civilité -->
+            <div class="input-field col s12">
+                <p>
+                    <label>
+                        <input name="civilite" type="radio" value="homme" />
+                        <span>Homme</span>
+                    </label>
+                    <label>
+                        <input name="civilite" type="radio" value="femme" />
+                        <span>Femme</span>
+                    </label>
+                </p>
+            </div>
+
+            <!-- Prénom -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="prenom" type="text" class="validate" required>
+                <label for="prenom">Prénom</label>
+            </div>
+
+            <!-- Nom -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="nom" type="text" class="validate" required>
+                <label for="nom">Nom</label>
+            </div>
+
+            <!-- Adresse -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">location_on</i>
+                <input id="adresse" type="text" class="validate" required>
+                <label for="adresse">Adresse</label>
+            </div>
+
+            <!-- Email -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+
+            <!-- Mot de passe -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">lock</i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Mot de passe</label>
+            </div>
+
+            <!-- Validation du mot de passe -->
+            <div class="input-field col s12">
+                <i class="material-icons prefix">lock</i>
+                <input id="password-validation" type="password" class="validate" required>
+                <label for="password-validation">Validation du mot de passe</label>
+            </div>
+
+            <!-- Passions (checkboxes) -->
+            <div class="input-field col s12">
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Informatique</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Voyages</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Sport</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Lecture</span>
+                    </label>
+                </p>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="input-field col s12">
+                <button type="submit" class="btn waves-effect waves-light blue">S'inscrire</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Materialize</h5>
+                    <p class="grey-text text-lighten-4">Yes we can!</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liens</h5>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Accueil</a></li>
+                        <li><a class="white-text" href="index.html">Inscription</a></li>
+                        <li><a class="white-text" href="index.html">Connexion</a></li>
+                        <li><a class="white-text" href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers le JS de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // Initialisation de Materialize pour les composants interactifs
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+
+</body>
+
+</html>
