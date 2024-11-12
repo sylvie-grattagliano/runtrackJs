@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Conteneur principal MY4 marge verticale 24px-->
+    <div class="container my-4">
+
+        <!-- Section pleine largeur en haut -->
+        <div class="row">
+            <div class="col-12 bg-info p-4">
+                Section pleine largeur
+            </div>
+        </div>
+
+        <!-- Section avec trois colonnes égales row agit comme un conteneur pour les colonnes marge verticale 3=1rem soit  16px-->
+        <div class="row my-3">
+            <div class="col-12 col-md-4 bg-primary p-4 border border-dark mb-2">
+                <!-- md : Correspond au point de rupture ("breakpoint") pour les écrans moyen 
+             p-4 padding 1.5rem soit 24px-->
+                Colonne 1
+            </div>
+            <div class="col-12 col-md-4 bg-primary p-4 border border-dark mb-2">
+                Colonne 2
+            </div>
+            <div class="col-12 col-md-4 bg-primary p-4 border border-dark mb-2">
+                Colonne 3
+            </div>
+        </div>
+
+        <!-- Section avec une grande colonne et une petite colonne -->
+        <div class="row my-3">
+            <div class="col-12 col-md-8 bg-secondary p-4 border border-dark mb-2">
+                Grande colonne
+            </div>
+            <div class="col-12 col-md-4 bg-secondary p-4 border border-dark mb-2">
+                Petite colonne
+            </div>
+        </div>
+
+        <!-- Section avec trois lignes, chacune avec une petite colonne alignée différemment -->
+        <div class="row my-3">
+            <div class="col-12 col-md-2 bg-warning p-2 mb-2">
+                Petite colonne alignée à gauche
+            </div>
+        </div>
+        <div class="row my-3 justify-content-center">
+            <div class="col-12 col-md-2 bg-warning p-2 mb-2">
+                Petite colonne centrée
+            </div>
+        </div>
+        <div class="row my-3 justify-content-end">
+            <div class="col-12 col-md-2 bg-warning p-2 mb-2">
+                Petite colonne alignée à droite
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
