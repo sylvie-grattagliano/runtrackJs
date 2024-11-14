@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- classe applique un padding vertical de taille 2  -->
+<!-- overflow classe masque tout contenu qui dépasse les limites de l'élément -->
+<!-- <header class="bg-[#336c45] text-white py-2 overflow-hidden"> -->
+
+<body>
+    <header class="bg-[#336c45] text-white py-2 overflow-hidden bg-cover bg-center bg-no-repeat " style="background-image: url('ours3.jpg');">
+        <div class="flex justify-between items-center max-w-6xl mx-auto mb-6">
+            <!-- Espacement horizontal entre chaque élément enfant du conteneur, avec une valeur de 8 : 32px -->
+            <nav class="flex space-x-8">
+                <!-- espace entre les link 32px -->
+                <a href="index.html" class="nav__link"><i class="fas fa-home"></i></a>
+                <a href="index.html" class="nav__link">Inscription</a>
+                <a href="index.html" class="nav__link">Connexion</a>
+                <a href="https://www.quatre-pattes.org/campagnes-themes/themes/animaux-sauvages/lours-brun-mode-de-vie-et-reproduction" class="nav__link">BEARS LIFE STYLE</a>
+
+            </nav>
+            <nav class="flex">
+                <a href=""><img src="search.svg" class="text-black" style="height: 30px" /></a>
+                <!-- <a href=""><img src="cart.svg" style="height: 30px" /></a> -->
+            </nav>
+        </div>
+        <div class="w-full max-w-lg p-8 relative h-[200px] bg-cover bg-center m-auto ">
+
+            <div class="relative z-10 flex flex-col items-center justify-center h-full">
+                <!-- Texte principal -->
+                <h1 class="text-white text-3xl font-bold"> Faites partie de l'aventure ! </h1>
+                <!-- Texte secondaire -->
+                <h2 class="text-white text-2xl">Inscrivez-vous vite</h2>
+            </div>
+        </div>
+        <!-- creation du formulaire  -->
+
+        <!-- <div class="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg m-auto bg-white/20"> -->
+
+
+        <!-- Début du formulaire -->
+        <form>
+            <div class="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg m-auto bg-white/5">
+
+                <div class="mb-4">
+                    <label class="block text-black-700 font-semibold mb-2">Civilité</label>
+                    <div class="flex space-x-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="civilite" value="monsieur" class="form-radio text-blue-500">
+                            <span class=" block text-yellow-500 ml-3"><i class="fas fa-male text-3xl"></i></span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="civilite" value="madame" class="form-radio text-blue-500">
+                            <span class=" block text-pink-500 ml-3"><i class="fas fa-female text-3xl"></i></span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="civilite" value="autre" class="form-radio text-blue-500">
+                            <span class="block text-white-500 ml-2"><i class="fas fa-paw text-4xl text-brown-700"></i>(autre)</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="mb-4">
+                    <label for="prenom" class="blockin text-black-700 font-semibold mb-2">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                </div>
+
+
+                <div class="mb-4">
+                    <label for="nom" class="block text-black-700 font-semibold mb-2">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                </div>
+
+
+                <!-- <div class="mb-4">
+                    <label for="adresse" class="block text-gray-700 font-semibold mb-2"><i class="fas fa-home mr-2"></i>Adresse</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Votre adresse" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+ -->
+
+                <div class="mb-4">
+                    <label for="email" class="block text-black-700 font-semibold mb-2"><i class="fas fa-envelope mr-2 text-blue-600"></i>Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Votre e-mail" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                </div>
+
+
+                <div class="mb-4">
+                    <label for="password" class="block text-black-700 font-semibold mb-2">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                </div>
+
+
+                <div class="mb-4">
+                    <label for="password_confirmation" class="block text-black-700 font-semibold mb-2">Confirmer le mot de passe</label>
+                    <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirmez votre mot de passe" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-black">
+                </div>
+
+                <!-- Passions -->
+                <div class="mb-4">
+                    <label class="block text-black-700 font-semibold mb-2"><i class="fas fa-heart text-red-600"></i> Passions</label>
+
+                    <div class="flex flex-wrap space-x-4">
+
+                        <label class="flex items-center">
+                            <input type="checkbox" name="passion" value="informatique" class="form-checkbox text-blue-500">
+                            <span class="block text-black-700 ml-2">Nature</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="passion" value="voyages" class="form-checkbox text-blue-500">
+                            <span class="block text-black-700 ml-2">Voyages</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="passion" value="sport" class="form-checkbox text-blue-500">
+                            <span class="block text-black-700 ml-2">Sport</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="passion" value="lecture" class="form-checkbox text-blue-500">
+                            <span class="block text-black-700 ml-2">Lecture</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Bouton de validation -->
+                <div>
+                    <button type="submit" class="w-full bg-green-800 text-white font-bold py-2 px-4 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Valider
+                    </button>
+                </div>
+
+        </form>
+        </div>
+
+    </header>
+
+    <footer class="relative h-[100px] bg-cover bg-center bg-[#336c45] ">
+        <div class="container mx-auto text-center space-y-4  pt-3">
+            <div class="text-l  text-white">
+                &copy; 2024 Job 01 Tailwind. Tous droits réservés.
+            </div>
+            <div class="flex justify-center space-x-6 text-white">
+                <img class="float-none rounded-lg " src="Ours.webp" style="height: 40px">
+                <a href="#" class="hover:text-green-300">À propos</a>
+                <a href="#" class="hover:text-green-300">Contact</a>
+                <a href="#" class="hover:text-green-300">Mentions légales</a>
+            </div>
+
+
+
+
+    </footer>
+
+</body>
+
+
+
+</html>
